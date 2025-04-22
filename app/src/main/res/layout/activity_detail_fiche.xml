@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textFicheTitre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Détails de la fiche"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/boutonRetour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retour"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Section Frais Forfaitaires -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frais Forfaitaires"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewForfaitaires"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+        <Button
+            android:id="@+id/btnAjoutForfait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Ajouter un frais forfaitaire"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Section Frais Hors Forfaitaires -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frais Hors Forfaitaires"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewHorsForfait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+        <Button
+            android:id="@+id/btnAjoutHorsForfait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Ajouter un frais hors forfait"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+</ScrollView>

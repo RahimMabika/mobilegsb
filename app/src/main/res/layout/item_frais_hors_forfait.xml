@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EDEDED"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/textCategorieHF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catégorie : "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textMontantHF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Montant : " />
+
+    <TextView
+        android:id="@+id/textDateHF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date : " />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnModifierHF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifier"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btnSupprimerHF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supprimer"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+</LinearLayout>

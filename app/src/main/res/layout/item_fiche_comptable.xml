@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f1f1f1"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Utilisateur"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textMois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/textMontant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Montant" />
+
+    <TextView
+        android:id="@+id/textStatut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statut"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/buttonVoir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voir" />
+
+        <Button
+            android:id="@+id/buttonValider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✔ Accepter"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/buttonRefuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="❌ Refuser"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>

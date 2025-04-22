@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f9f9f9"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/textEmailUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email@gsb.fr"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textRoleUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="visiteur" />
+
+</LinearLayout>
